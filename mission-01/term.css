@@ -10,25 +10,23 @@
     border: 1px solid #A3A3A3;
     border-radius: 5px;
     margin: 2rem;
-}
-
-.web-expression-wrapper {
     padding: 1rem;
 }
+
 
 
 .web-expression__title {
     font-size: 15px;
 }
 
-.web-expression-wrapper dt {
+.webExpression dt {
     color : #296897;
     font-weight: 600;
 }
 
 
 /*dd 태그에 기본 마진이 있기때문에 0으로 */
-.web-expression-wrapper dd{
+.webExpression dd{
     margin: 0;
     overflow: hidden;
     font-size: 14px;
@@ -44,7 +42,7 @@
 
 
 
-/*top & bottom 패딩 간격 설정*/
+/*top & bottom 패딩*/
 .web-expression__top{
     padding-top: 1rem;
 }
