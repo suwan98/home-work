@@ -1,7 +1,25 @@
-.valdation-list__W3C,.valdation-list__CSS {
+
+@import url(./base.css);
+
+
+.valdation-list a {
+    text-decoration: none;
+    background: url(../assets/images/validation_icon\ 2.svg) no-repeat;
+    padding-left: 20px;
+    width: 100%;
+    display: block;
+    height: 100vh;
+}
+.valdation-list a:visited {
+    color: #000000;
+}
+
+.valdation-list__W3C,
+.valdation-list__CSS {
+    list-style: none;
     width:15.625rem;
     height: 2.5rem;
-    padding-top: 20px;
+    padding: 0.5rem 1rem;
     margin-top: 20px;
     background-color: #CCCCCC;
     border-radius: 34px;

@@ -1,0 +1,59 @@
+@import url(./base.css);
+
+
+
+.webExpression {
+    background-color: liner;
+    background: linear-gradient(180deg, #CCCCCC 0%, #EEEEEE 100%);
+    width: 15rem;
+    height: 17.5rem;
+    border: 1px solid #A3A3A3;
+    border-radius: 5px;
+    margin: 2rem;
+}
+
+.web-expression-wrapper {
+    padding: 1rem;
+}
+
+
+.web-expression__title {
+    font-size: 15px;
+}
+
+.web-expression-wrapper dt {
+    color : #296897;
+    font-weight: 600;
+}
+
+
+/*dd 태그에 기본 마진이 있기때문에 0으로 */
+.web-expression-wrapper dd{
+    margin: 0;
+    overflow: hidden;
+    font-size: 14px;
+    padding-top: 0.25rem;
+}
+
+
+.web-expression__top img {
+    float: left;
+    padding-right: 1rem;
+
+}
+
+
+
+/*top & bottom 패딩 간격 설정*/
+.web-expression__top{
+    padding-top: 1rem;
+}
+.web-expression__bottom{
+    padding-top: 0.5rem;
+}
+
+
+.web-expression__bottom img {
+    float: right;
+    padding-left: 1rem;
+}
