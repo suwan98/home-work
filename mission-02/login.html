@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>login</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="title">로그인</h1>
+      <div class="formWrapper">
+        <div class="formLoginWrapper">
+          <form action="URL" method="POST" name="login">
+            <fieldset>
+              <legend class="a11yHidden">로그인 폼</legend>
+              <div class="userLoginInput">
+                <label for="userId" class="userLoginInput__label">아이디</label
+                ><input
+                  type="email"
+                  class="userLoginInput__input"
+                  id="userId"
+                  placeholder="euid@euid.dev"
+                  required />
+              </div>
+              <div class="userPasswordInput">
+                <label for="userPassword" class="userPasswordInput__label"
+                  >비밀번호</label
+                ><input
+                  type="password"
+                  class="userPasswordInput__input"
+                  id="userPassword"
+                  placeholder="8자리 이상"
+                  minlength="8"
+                  required />
+              </div>
+              <button class="userButton" type="submit">
+                <span class="userButton__login">로그인</span>
+              </button>
+            </fieldset>
+          </form>
+        </div>
+        <!--하단 마크업-->
+        <ul class="userOnly">
+          <li>
+            <span class="userOnly__user--join">회원가입</span>
+          </li>
+          <li>
+            <span class="userOnly__user--missing">아이디 비밀번호 찾기</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

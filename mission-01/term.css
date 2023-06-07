@@ -3,7 +3,7 @@
 
 
 .webExpression {
-    background-color: liner;
+    /* background-color: liner; */
     background: linear-gradient(180deg, #CCCCCC 0%, #EEEEEE 100%);
     width: 15rem;
     height: 17.5rem;
@@ -12,8 +12,6 @@
     margin: 2rem;
     padding: 1rem;
 }
-
-
 
 .web-expression__title {
     font-size: 15px;
@@ -24,7 +22,6 @@
     font-weight: 600;
 }
 
-
 /*dd 태그에 기본 마진이 있기때문에 0으로 */
 .webExpression dd{
     margin: 0;
@@ -33,14 +30,10 @@
     padding-top: 0.25rem;
 }
 
-
 .web-expression__top img {
     float: left;
     padding-right: 1rem;
-
 }
-
-
 
 /*top & bottom 패딩*/
 .web-expression__top{

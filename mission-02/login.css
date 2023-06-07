@@ -1,0 +1,132 @@
+@import url(./base.css);
+@import url(./a11y.css);
+@import url(./reset.css);
+
+
+
+
+/* 로그인 전체 영역 */
+.container {
+    position: relative;
+    margin: 50px;
+    width: 244px;
+    height: 160px;
+    background: linear-gradient(90deg, #ED552F 0%, #E8852E 100%);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px #AAAAAA;
+}
+
+/* 제목 */
+.title {
+    color: #ffff00;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px 8px 12px 12px;
+}
+
+
+/* 로그인 폼 내부 영역 */
+.formWrapper {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -43px;
+    width: 220px;
+    height: 106px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.formLoginWrapper {
+    width: 100%;
+    height: 69px;
+    padding: 14px 8px;
+}
+
+/* 로그인 폼 내부 영역 아이디 */
+.userLoginInput{
+    position: relative;
+    width: 146px;
+    height: 24px;
+}
+.userLoginInput__label {
+    font-size: 14px;
+    width: 56px;
+}
+
+.userLoginInput__input{
+    position: absolute;
+    right: 0;
+    width: 90px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC
+
+}
+
+
+
+/* 로그인 폼 내부 영역 비밀번호 */
+
+.userPasswordInput {
+    position: relative;
+
+    width: 146px;
+    height: 24px;
+}
+
+.userPasswordInput__label {
+    font-size: 14px;
+    width: 56px;
+}
+
+.userPasswordInput__input{
+    position: absolute;
+    right: 0;
+    width: 90px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC
+
+}
+/* r0 t0을 줘서 마진 */ 
+
+/*로그인 버튼*/
+.userButton {
+    position: absolute;   
+    right: 0;
+    top: 0;
+    margin: 8px;
+    padding: 4px;
+    width: 50px;
+    height: 53px;
+    background: #ED552F;
+    border-radius: 5px;
+    border: none;
+}
+.userButton__login {
+    top: 50%;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+/*회원가입 및 아이디 비밀번호 찾기 영역*/
+.userOnly {
+    position: relative;
+    margin: 8px 4px;
+    height: 36px;
+}
+
+.userOnly::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: -8px;
+    width: 209px;
+    border: 1px solid #CCCCCC;
+}
+.userOnly__user--join,.userOnly__user--missing {
+    font-size: 13px; 
+    float: left;
+    margin-left: 11px;
+}
+
+
+
+
