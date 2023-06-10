@@ -4,7 +4,7 @@
 
 ## 완성본
 
-<p style='center'><img src='./images/chrome_dcK9ZIG2YD.gif' /><p>
+<p style='center'><img src='./images/chrome_NtzHuCjHST.gif' /><p>
 
 <br />
 
@@ -106,8 +106,10 @@
     justify-content: space-between;
     cursor: pointer;
     width: 100%;
+    height: 29px;
+    overflow: hidden;
+    padding-top: 5px;
     padding-left: 28px;
-    height: 145px;
     background-color: #fff;
     border-radius: 5px;
     border: 1px solid #A3A3A3;
@@ -118,18 +120,15 @@
 }
 
 .relatedSite:hover {
-    height: 15%;
-    transform: translateY(15%);
-    overflow: hidden;
+    height: 100%;
+    padding-top: 10px;
     transition: all 0.5s ease-in-out;
 }
 ```
 
 <br />
 
-- 애니메이션은 부모요소인 `relatedSite클래스`에 `hover` 가상클래스 선택자를 사용하여 `hover` 됬을시 **높이**를 `145/15%`만큼 가지게 했고, <br />
-- `transnform : translateY(15%)`는 해당 요소가 **현재 위치하고 있는 위치에서 15%만큼 아래쪽으로 이동**시키는 효과를 부여했음
-- 박스크기가 작아지는 만큼 남겨지는 부분은 `overflow : hidden` 속성으로 감췄다
+- 애니메이션은 부모요소인 `relatedSite클래스`에 `hover` 가상클래스 선택자를 사용하여 `hover` 됬을시 **기존높이**를 `100%`를 가져 콘텐츠가 전부 보이도록 했고, <br />
 - `transition의 ease-in-out timing function`으로 **시작과 끝 모두에서 천천히 일어나지만 중간 어딘가에선 속도가 빨라지도록** 구현했음
 
 
