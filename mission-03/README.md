@@ -79,7 +79,7 @@
     display: flex;
     width: 11.875rem;
     height: 24rem;
-    padding: 12px;
+    padding: 0.75rem;
     background: linear-gradient(#CCCCCC,#EEEEEE);
 }
 
