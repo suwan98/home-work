@@ -1,0 +1,86 @@
+@import url(./base.css);
+@import url(./normalize.css);
+
+
+.news-container {
+    margin: 50px;
+
+}
+.news {
+    width: 23.75rem;
+    height: 12.5rem;
+}
+.newsTopWrapper{
+    position: relative;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg, #A9A9A9  -1.32%, #FFFFFF 100%);
+    border-image-slice: 1;
+    padding-bottom: 24px;
+
+}
+.news__plusView{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.news__title {
+    font-size: 14px;
+    color: #ED552F;
+}
+
+.news__more--view{
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+
+/* 하단 부분 그리드효과 적용 */
+.newsBottomWrapper {
+    border-image-slice: 1;
+    border-image: linear-gradient(90deg, #A9A9A9 -1.32%, #FFFFFF 100%);
+    border-top: 1px solid;
+    /* 보더와의 길이 여백을 위해 패딩탑 */
+    padding-top: 12px;
+    /* 상단과 하단의 여백을 위해 마진 탑 */
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+     "news-image news-image news-sub news-sub news-sub ."
+     "news-image news-image news-sub news-sub news-sub ."
+     "news-image news-image news-desc news-desc news-desc news-desc"
+     "news-image news-image news-desc news-desc news-desc news-desc"
+}
+.newsImage{
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding-right: 17px;
+    grid-area: news-image;
+
+}
+.newsImage img{
+    padding-left: 0;
+    padding-bottom: 16px;
+}
+
+
+.news__subTitle{
+    font-size: 14px;
+    grid-area: news-sub;
+}
+
+.news__subTitle--new {
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.news__description{
+    font-size: 14px;
+    line-height: 1.5;
+    padding-top: 12px;
+    grid-area: news-desc;
+}
