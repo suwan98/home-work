@@ -7,6 +7,10 @@
 <p><img src='./assets/images/스크린샷 2023-06-13 004427.png'><p>
 
 
+<br />
+
+<p><img src='./assets/images/스크린샷 2023-06-13 163626.png'><p>
+
 ### HTML 마크업
 
 큰 하나의 섹션을 news로 보고
