@@ -1,0 +1,101 @@
+@import url(./base.css);
+
+/* 공통 스타일 */
+
+li, a {
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+
+.popularSite{
+    margin: 50px;
+    width: 11.875rem;
+    height: 9.1875rem;
+    background: linear-gradient(to right, #cccccc, #eeeeee);
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+}
+
+.popularSite__title{
+    position: relative;
+    margin: 12px;
+    font-size: 15px;
+}
+
+
+.accentText {
+    color: #ED552f;
+}
+
+.listWrapper{
+    margin: 12px;
+}
+
+.popularSite__more{
+    position: absolute;
+    top: 0;
+    right:0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.popularSite__list{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    margin: 0;
+    padding-left: 0;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 11px; 
+}
+
+.popularSite__list a {
+    padding-left: 4px;
+}
+
+/* textnode와 가상요소 정렬 맞추기 */
+.popularSite__list li {
+    display: flex;
+    align-items: center;
+}
+
+.popularSite__list li::before {
+    content: "";
+    width: 1rem;
+    color: #fff;
+    text-align: center;
+    height: 1rem;
+    border-radius: 5px;
+    background: #a3a3a3;
+}
+
+.popularSite__list li:first-child:before{
+    content: "1";
+}
+.popularSite__list li:nth-child(2):before{
+    content: "2";
+}
+.popularSite__list li:nth-child(3):before{
+    content: "3";
+}
+.popularSite__list li:last-child:before{
+    content: "4";
+}
+
+
+/* sprite 스타일링 */
+.sprite {
+    background: url(./assets/images/rank.png) no-repeat;
+    background-position: 9.5625rem 0;
+}
+
+.spriteDown{
+    background-position: 9.5625rem -2.6rem;
+}
+
+.spriteKeep{
+    background-position: 9.5625rem -1.25rem;
+
+}
