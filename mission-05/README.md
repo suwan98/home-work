@@ -26,7 +26,7 @@
       <div class="listWrapper">
         <ol class="popularSite__list">
           <li class="sprite">
-            <a href="#" class="sprite">W3C</a>
+            <a href="#">W3C</a>
           </li>
           <li class="sprite spriteDown">
             <a href="#">Web Standards</a>
@@ -98,8 +98,10 @@
 
 - 기존 `ol`리스트의 에이전트 스타일을  `list-style:none`으로 제거 후
 - `ol`태그 내부의 자식요소인 `li`에 `before` 가상요소 선택자를 만들어
-- 해당 리스트마다 content를 다르게 부여했고
-- `list`를 `flex`로 만들어 해당 `list안의 텍스트`와 `before 요소`들의 가운데 정렬을 부여했습니다
+- `body`에 `counter-reset: listNumber;` 속성을 부여해 카운터 생성을 한후
+- `before` 가상 요소 선택자에 `counter-increment: listNumber;`를 부여해 카운터 값을 증가시키게 한후,
+- content에 생성된 `listNumber`를 삽입해서 1,2,3,4.. 이렇게 증가하도록 만들었습니다
+- `list`를 `flex`로 만들어 해당 `list안의 텍스트`와 `before 요소`들의 정렬을 부여했습니다
 
 ```css
 /* textnode와 가상요소 정렬 맞추기 */
@@ -118,17 +120,15 @@
     background: #a3a3a3;
 }
 
-.popularSite__list li:first-child:before{
-    content: "1";
-}
-.popularSite__list li:nth-child(2):before{
-    content: "2";
-}
-.popularSite__list li:nth-child(3):before{
-    content: "3";
-}
-.popularSite__list li:last-child:before{
-    content: "4";
+.popularSite__list li::before {
+    counter-increment: listNumber;
+    content: counter(listNumber);
+    width: 1rem;
+    color: #fff;
+    text-align: center;
+    height: 1rem;
+    border-radius: 5px;
+    background: #a3a3a3;
 }
 ```
 
@@ -140,18 +140,18 @@
 ```css
 .sprite {
     background: url(./assets/images/rank.png) no-repeat;
-    background-position: 9.5625rem 0;
+    background-position: right 0;
 }
 
 .spriteDown{
-    background-position: 9.5625rem -2.6rem;
+    background-position: right -2.6rem;
 }
 
 .spriteKeep{
-    background-position: 9.5625rem -1.25rem;
+    background-position: right -1.25rem;
 
 }
 ```
 
 - 각 `list`태그에 공통 클래스 `.sprite`를 부여해 `background-image`를 삽입했고
-- `background-postion`으로 x축과 y축을 이동 뒤에 적절한 이미지에 맞췄습니다
+- `background-postion`으로 x축 끝으로가도록 `right` y축을 이동 뒤에 적절한 이미지에 맞췄습니다
